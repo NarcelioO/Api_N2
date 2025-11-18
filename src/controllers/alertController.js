@@ -1,4 +1,4 @@
-import {Alert} from "../models/alert.js";
+import {Alert} from "../models/Alert.js";
 
 const alertController = {
 
