@@ -3,7 +3,10 @@ import {Alert} from "../models/Alert.js";
 const alertController = {
 
     async list(req, res) {
-        return res.json({"message":"OK"})
+        try{
+            const alerts = await Alert.find({})
+            
+        res.status(200).send({alerts})
     },
     
     async create(req, res) {
