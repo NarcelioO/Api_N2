@@ -3,6 +3,7 @@ import {Alert} from "../models/Alert.js";
 const alertController = {
 
     async list(req, res) {
+        return res.json({"message":"OK"})
     },
     
     async create(req, res) {
