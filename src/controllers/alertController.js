@@ -6,7 +6,7 @@ const alertController = {
         try{
             const alerts = await Alert.find({})
             
-            res.status(200).send({alerts})
+            res.status(200).json(alerts)
         }catch(err){
             res.status(500).send({"Erro":"Erro ao listar alertas"})
         }
