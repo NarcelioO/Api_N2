@@ -1,9 +1,13 @@
 import "dotenv/config.js";
 import express from "express";
 import { connectDB } from "../src/config/database.js"
+import router from "./routes/routes.js";
+
 const app = express();
 app.use(express.json());
 
+
+app.use("/api", router);
 
 async function start() {
     await connectDB();
