@@ -15,4 +15,4 @@ const AlertSchema = new mongoose.Schema({
     }
 })
 
-export const Alert = mongoose.model('alert', AlertSchema);
+export const Alert = mongoose.model('alerts', AlertSchema);
