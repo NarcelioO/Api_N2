@@ -4,6 +4,7 @@ import { connectDB } from "../src/config/database.js"
 import router from "./routes/routes.js";
 
 const app = express();
+app.user(cors());
 app.use(express.json());
 
 
