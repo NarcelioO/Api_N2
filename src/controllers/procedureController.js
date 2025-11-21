@@ -20,7 +20,7 @@ const procedureController = {
             return res.status(400).json({ error: 'Campos obrigatórios não enviados.' });
         }
 
-        const newProcedure = new Alert({ title, device, procedures});
+        const newProcedure = new DeviceProcedure({ title, device, procedures});
         await newProcedure.save();
         return res.json(newProcedure);
 
