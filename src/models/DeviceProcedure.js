@@ -27,4 +27,4 @@ const DeviceProcedureSchema = new Schema({
     }
 })
 
-module.exports = mongoose.model("DeviceProcedure", DeviceProcedureSchema)
+export const DeviceProcedure = mongoose.model("DeviceProcedure", DeviceProcedureSchema)
